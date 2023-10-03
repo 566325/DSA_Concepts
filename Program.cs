@@ -1,25 +1,42 @@
-﻿namespace DataStructures_Concepts
+﻿using System;
+
+namespace DataStructures_Concepts
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            StackOperations stack = new StackOperations();
+            stack.Push(56);
+            stack.Push(30);
+            stack.Push(70);
+            Console.WriteLine("*******elements in Stack*********");
+            stack.display();
+            stack.Pop();
+            Console.WriteLine("After Pop");
+            stack.display();
+            stack.Pop();
+            Console.WriteLine("After Peek");
+            stack.Peek();
+            stack.display();
 
-            QueueOperations queue = new QueueOperations();
-            queue.Enqueue(56);
-            queue.Enqueue(30);
-            queue.Enqueue(70);
-            Console.WriteLine("*******elements in queue*********");
-            queue.display();
-            queue.dequeue();
-            Console.WriteLine("Elements in queue after Dequeue");
-            queue.display();
-            queue.dequeue();
-            Console.WriteLine("Elements in queue after Dequeue");
-            queue.display();
-            queue.dequeue();
-            Console.WriteLine("Elements in queue after Dequeue");
-            queue.display();
+
+
+            //QueueOperations queue = new QueueOperations();
+            //queue.Enqueue(56);
+            //queue.Enqueue(30);
+            //queue.Enqueue(70);
+            //Console.WriteLine("*******elements in queue*********");
+            //queue.display();
+            //queue.dequeue();
+            //Console.WriteLine("Elements in queue after Dequeue");
+            //queue.display();
+            //queue.dequeue();
+            //Console.WriteLine("Elements in queue after Dequeue");
+            //queue.display();
+            //queue.dequeue();
+            //Console.WriteLine("Elements in queue after Dequeue");
+            //queue.display();
 
             //LinkedList<int> list = new LinkedList<int>();
             //list.AddFirst(56);
